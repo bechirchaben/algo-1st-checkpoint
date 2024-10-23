@@ -1,0 +1,23 @@
+    algorithm count_length_word_vowel
+
+ var 
+
+    length = 0
+    word_num = 1 
+    vowel=0 
+    vowels='aeiouAEIOU'
+        
+ begin
+    for char in sentence : 
+    if char='.' : 
+    break 
+     length = length + 1 
+    if char = ' ' :
+        word_num=word_num+1 
+    if char in vowel : 
+        vowel=vowel+1 
+    return length , num_word , vowel
+ end
+    write('length : ',length)
+    write(' number of words =', word_num)
+    write('number of vowels=',vowel)
